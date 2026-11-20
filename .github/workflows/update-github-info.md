@@ -22,6 +22,7 @@ network:
     - copilot
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     allowed-files:
@@ -36,9 +37,10 @@ Read `notes/mona-notes.md` and `site/content/github-info.md` first. Then use the
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
 Identify only recent, reliable updates that help developers learn GitHub faster and fit the site's existing themes. Verify details against the fetched source pages; do not infer features, dates, availability, or product behavior that the sources do not support.
 
-Edit only `site/content/github-info.md`. Keep additions short and practical, preserve the existing editorial direction, and link each update to its GitHub Blog or Changelog source.
+Edit only `site/content/github-info.md`. Keep additions short and practical, preserve the existing editorial direction, and link each update to its originating GitHub Blog, Changelog, or Awesome Copilot workflow page.
 
 If neither page contains a clearly useful, sufficiently supported update, make no changes and call `noop` with a brief reason. If you make a change, open one non-draft pull request for Mona to review. Summarize the update and include its source links in the pull request description. Use the configured create-pull-request safe output; never write directly to the default branch or use another write mechanism.
